@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\WebAPI.Communication\WebAPI.Communication.csproj" />
+    <ProjectReference Include="..\..\Shared\WebAPI.Exceptions\WebAPI.Exceptions.csproj" />
+    <ProjectReference Include="..\WebAPI.Application\WebAPI.Application.csproj" />
+  </ItemGroup>
+
+</Project>
